@@ -1,7 +1,8 @@
 # cli-if
 Simple node CLI utility that runs the specified command if condition evaluates to true.
 
-# usage
+## Usage
+Intended to run inside of an NPM script when a false evaluation should just exit the script
 ```
 cli-if [compare] [expected] [actual] [runIfTrue]
 ```
@@ -11,10 +12,10 @@ cli-if [compare] [expected] [actual] [runIfTrue]
 * `actual`: actual value to compare `expected` with
 * `runIfTrue`: command that gets executed if condition evaluates to true
 
-# Supported Compare Types
+## Supported Compare Types
 - contains
 
-# examples
+## Examples
 This will run the command the `npm run doSomething`
 ```
 cli-if contains test testing npm run doSomething
