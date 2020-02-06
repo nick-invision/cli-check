@@ -1,11 +1,11 @@
 {
-  "name": "compare-cli",
+  "name": "cli-if",
   "version": "0.0.0-semantic-release",
   "description": "Basic CLI comparison utility",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nick-invision/compare-cli.git"
+    "url": "git+https://github.com/nick-invision/cli-if.git"
   },
   "keywords": [
     "compare",

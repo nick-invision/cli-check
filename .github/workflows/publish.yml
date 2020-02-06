@@ -20,7 +20,7 @@ jobs:
           node-version: '10.x'
       - name: Install
         run: npm ci
-      - run: npm run semantic-release
+      - run: npx semantic-release
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
