@@ -1,0 +1,36 @@
+{
+  "name": "cli-if",
+  "version": "0.0.0-semantic-release",
+  "description": "Basic CLI comparison utility",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick-invision/cli-if.git"
+  },
+  "keywords": [
+    "compare",
+    "comparison",
+    "cli"
+  ],
+  "author": "Nick Fields",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nick-invision/compare-cli/issues"
+  },
+  "homepage": "https://github.com/nick-invision/compare-cli#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "husky": "^4.2.1",
+    "semantic-release": "^17.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
