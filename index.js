@@ -3,7 +3,8 @@ const { execSync } = require('child_process');
 
 const args = process.argv;
 const supported = [
-    'contains'
+    'contains',
+    'not-contains'
 ]
 const root = args[2]
 const expected = args[3];
@@ -25,6 +26,12 @@ const contains = (expected, actual) => {
         case 'contains':
             if (!contains(expected, actual)) {
                 console.error(`${actual} does not contain ${expected}.  Exiting.`)
+                process.exit(0);
+            }
+            break;
+        case 'not-contains':
+            if (contains(expected, actual)) {
+                console.error(`${actual} contains ${expected} but was not expected.  Exiting.`)
                 process.exit(0);
             }
             break;
